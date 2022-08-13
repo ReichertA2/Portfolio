@@ -11,9 +11,11 @@ import pic from "../pic.jpg";
 // #background: "#303030"
 export default function MainBody() {
   return (
-    <Card sx={{ mx: 50, mt: 10}}>
-        {/* <CardContent sx={{textAlign: "center"}}> */}
-      <CardContent sx={{}}>
+    <Card 
+    sx={{ mx: 50, mt: 10, display: 'flex'}}>
+      {/* <CardContent sx={{textAlign: "center"}}> */}
+      <CardContent sx={{ width: "40%"}}>
+        {/* <div sx={{display: "inline-block", width:"25%"}}> */}
         <Button sx={{ textAlign: "center", mb: 2 }} variant="contained">
           Full Stack Developer
         </Button>
@@ -30,23 +32,25 @@ export default function MainBody() {
           Flask-Backend utilizing PostgreSQL.
           <br />
         </Typography>
-        <div sx={{ float: "left" }}>
-          <img
-            src={pic}
-            alt={"profile"}
-            width="200px"
-            contentAlign="center"
-            position= "absolute"
-            //   display="inline"
-            //   textAlign="right"
-
-            float="left"
-          />
-        </div>
+        {/* </div> */}
       </CardContent>
-      <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
+      {/* <CardActions> */}
+      {/* <Button size="small">Learn More</Button> */}
+      {/* </CardActions> */}
+      <div sx={{ width: "35%"}}>
+        <img
+            // sx={{ display:"inline-block"}}
+          src={pic}
+          alt={"profile"}
+          width="200px"
+          // contentAlign="center"
+          // position= "absolute"
+          //   display="inline"
+          //   textAlign="right"
+
+          // float="left"
+        />
+      </div>
     </Card>
   );
 }
