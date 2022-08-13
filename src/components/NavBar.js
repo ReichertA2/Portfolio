@@ -16,7 +16,7 @@ const Root = styled("div")(({ theme }) => ({
   height: "100%",
   backgroundColor:
     theme.palette.mode === "dark"
-      ? grey[900]
+      ? "#303030"
       : theme.palette.background.default,
 }));
 
