@@ -64,17 +64,17 @@ function SwipeableEdgeDrawer(props) {
       <Box
         sx={{
           display: "flex",
-          width: "100%",
-          //    float:"left",
+          // width: "100%",
+            //  float:"left",
           pt: 4,
           // display: "inline-block",
           alignItems: "center",
           // padding: "10px",
           justifyContent: "space-evenly",
-          marginRight: "400px",
+          // marginRight: "200px",
         }}
       >
-        <p sx={{Left:"-60rem"}}>Aydee Reichert</p>
+        <h3 sx={{marginRight: "100px"}}>Aydee Reichert</h3>
         <div sx={{}}>
           <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
             About Me
