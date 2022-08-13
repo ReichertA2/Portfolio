@@ -9,6 +9,9 @@ import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Typography from "@mui/material/Typography";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Link from "@mui/material/Link";
 
 const drawerBleeding = 56;
 
@@ -60,31 +63,50 @@ function SwipeableEdgeDrawer(props) {
 
       <Box
         sx={{
-            display: "flex", 
-          width:"100%",
-        //    float:"left",
+          display: "flex",
+          width: "100%",
+          //    float:"left",
           pt: 4,
-            // display: "inline-block",
-            alignItems: "center",
-          padding: "20px",
-            justifyContent: "space-evenly",
-            marginRight: "400px"
+          // display: "inline-block",
+          alignItems: "center",
+          // padding: "10px",
+          justifyContent: "space-evenly",
+          marginRight: "400px",
         }}
       >
-        <h3 sx={{ }}>Aydee Reichert</h3>
-        <div sx={{  }}>
-        <Button sx={{ marginRight: "1rem" }} onClick={toggleDrawer(true)}>
-          About Me
-        </Button>
-        <Button sx={{ marginRight: "1rem" }} onClick={toggleDrawer(true)}>
-          Experience
-        </Button>
-        <Button sx={{ marginRight: "1rem" }} onClick={toggleDrawer(true)}>
-          Projects
-        </Button>
-        <Button onClick={toggleDrawer(true)}>Contact</Button>
+        <p sx={{Left:"-60rem"}}>Aydee Reichert</p>
+        <div sx={{}}>
+          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+            About Me
+          </Button>
+          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+            Experience
+          </Button>
+          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+            Projects
+          </Button>
+          <Button onClick={toggleDrawer(true)}>Contact</Button>
         </div>
+        <Link sx={{marginRight:"-15rem"}} href="https://github.com/ReichertA2">
+          <GitHubIcon />
+          Github
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/aydee-reichert">
+          <LinkedInIcon />
+          LinkedIn
+        </Link>
       </Box>
+      {/* <div sx={{}}>
+        <p>
+          <GitHubIcon />
+          Github
+        </p>
+        <p>
+          <LinkedInIcon />
+          LinkedIn
+        </p>
+      </div> */}
       <SwipeableDrawer
         container={container}
         anchor="bottom"
