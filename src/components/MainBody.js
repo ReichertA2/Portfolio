@@ -11,7 +11,7 @@ import pic from "../pic.jpg";
 // #background: "#303030"
 export default function MainBody() {
   return (
-    <Card sx={{ mx: 50, mt: 10, display: "flex", background: "#303030" }}>
+    <Card  sx={{ mx: 50, mt: 10, display: "flex", background: "#303030", border: "none", boxShadow: "none"  }}>
       {/* <CardContent sx={{textAlign: "center"}}> */}
       <CardContent sx={{ width: "60%" }}>
         {/* <div sx={{display: "inline-block", width:"25%"}}> */}
