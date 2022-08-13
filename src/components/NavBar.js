@@ -65,7 +65,7 @@ function SwipeableEdgeDrawer(props) {
         sx={{
           display: "flex",
           // width: "100%",
-            //  float:"left",
+          //  float:"left",
           pt: 4,
           // display: "inline-block",
           alignItems: "center",
@@ -75,7 +75,8 @@ function SwipeableEdgeDrawer(props) {
           // marginRight: "200px",
         }}
       >
-        <h1 sx={{justifyContent: "left", FontSize: '2 rem'}}>Aydee Reichert</h1>
+        <Typography component="h1" sx={{fontSize: "175% !important" }}>Aydee Reichert</Typography>
+        
         <div sx={{}}>
           <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
             About Me
@@ -88,7 +89,7 @@ function SwipeableEdgeDrawer(props) {
           </Button>
           <Button onClick={toggleDrawer(true)}>Contact</Button>
         </div>
-        <Link sx={{marginRight:"-11%"}} href="https://github.com/ReichertA2">
+        <Link sx={{ marginRight: "-11%" }} href="https://github.com/ReichertA2">
           <GitHubIcon />
           Github
         </Link>
