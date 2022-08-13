@@ -75,7 +75,7 @@ function SwipeableEdgeDrawer(props) {
           // marginRight: "200px",
         }}
       >
-        <h2 sx={{justifyContent: "left"}}>Aydee Reichert</h2>
+        <h1 sx={{justifyContent: "left", FontSize: '2 rem'}}>Aydee Reichert</h1>
         <div sx={{}}>
           <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
             About Me

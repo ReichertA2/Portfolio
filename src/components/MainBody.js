@@ -11,15 +11,15 @@ import pic from "../pic.jpg";
 // #background: "#303030"
 export default function MainBody() {
   return (
-    <Card sx={{ mx: 50, mt: 10, display: "flex" }}>
+    <Card sx={{ mx: 50, mt: 10, display: "flex", background: "#303030" }}>
       {/* <CardContent sx={{textAlign: "center"}}> */}
-      <CardContent sx={{ width: "50%" }}>
+      <CardContent sx={{ width: "60%" }}>
         {/* <div sx={{display: "inline-block", width:"25%"}}> */}
         <Button sx={{ textAlign: "center", mb: 2 }} variant="contained">
           Full Stack Developer
         </Button>
 
-        <Typography sx={{ fontSize: 30 }} gutterBottom>
+        <Typography sx={{ fontSize: 35 }} gutterBottom>
           Truth can only be found in one place: the code
         </Typography>
         <Typography variant="h5" component="div">
@@ -36,8 +36,8 @@ export default function MainBody() {
       {/* <CardActions> */}
       {/* <Button size="small">Learn More</Button> */}
       {/* </CardActions> */}
-      <div sx={{padding: '10px'}}>
-        <img src={pic} alt={"profile"} width="250px"  />
+      <div sx={{}}>
+        <img src={pic} alt={"profile"} width="270px" />
       </div>
     </Card>
   );
