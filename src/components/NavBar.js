@@ -71,10 +71,11 @@ function SwipeableEdgeDrawer(props) {
           alignItems: "center",
           // padding: "10px",
           justifyContent: "space-evenly",
+          flexFlow: "row wrap",
           // marginRight: "200px",
         }}
       >
-        <h3 sx={{marginRight: "100px"}}>Aydee Reichert</h3>
+        <h2 sx={{justifyContent: "left"}}>Aydee Reichert</h2>
         <div sx={{}}>
           <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
             About Me
@@ -87,7 +88,7 @@ function SwipeableEdgeDrawer(props) {
           </Button>
           <Button onClick={toggleDrawer(true)}>Contact</Button>
         </div>
-        <Link sx={{marginRight:"-15rem"}} href="https://github.com/ReichertA2">
+        <Link sx={{marginRight:"-11%"}} href="https://github.com/ReichertA2">
           <GitHubIcon />
           Github
         </Link>
