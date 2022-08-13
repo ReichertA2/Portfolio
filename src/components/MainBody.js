@@ -1,14 +1,52 @@
-import React from "react";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import CardMedia from "@mui/material/CardMedia";
+import pic from "../pic.jpg";
 
+// #background: "#303030"
 export default function MainBody() {
   return (
-    <>
-    <Button sx={{textAlign:"center"}} variant="contained">Full Stack Developer</Button>
-    <p>I am a Software Developer focused in React-Frontend and Flask-Backend utilizing PostgreSQL. I am creative, innovative and passionate about bringing solutions to challenging issues. I will continue to strive to improve and be better as a developer. Building the right team has always been essential to my continued success. I am interested in either both Front-End and Back-end. Enjoy how front-end brings the beauty of an application and love how backend makes the connection. Cannot wait to join your team!!
-    </p>
-    </>
+    <Card sx={{ mx: 50, mt: 10}}>
+        {/* <CardContent sx={{textAlign: "center"}}> */}
+      <CardContent sx={{}}>
+        <Button sx={{ textAlign: "center", mb: 2 }} variant="contained">
+          Full Stack Developer
+        </Button>
 
-   
+        <Typography sx={{ fontSize: 20 }} gutterBottom>
+          Truth can only be found in one place: the code
+        </Typography>
+        <Typography variant="h5" component="div">
+          {/* be{bull}nev{bull}o{bull}lent */}
+        </Typography>
+        <Typography sx={{ mb: 1.5 }}>{/* adjective */}</Typography>
+        <Typography variant="body2">
+          Hi, I am a Software Developer focused in React-Frontend and
+          Flask-Backend utilizing PostgreSQL.
+          <br />
+        </Typography>
+        <div sx={{ float: "left" }}>
+          <img
+            src={pic}
+            alt={"profile"}
+            width="200px"
+            contentAlign="center"
+            position= "absolute"
+            //   display="inline"
+            //   textAlign="right"
+
+            float="left"
+          />
+        </div>
+      </CardContent>
+      <CardActions>
+        {/* <Button size="small">Learn More</Button> */}
+      </CardActions>
+    </Card>
   );
 }
