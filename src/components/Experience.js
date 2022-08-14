@@ -4,6 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Button from "@mui/material/Button";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -14,6 +15,10 @@ export default function ControlledAccordions() {
 
   return (
     <div className="w-1/3 m-auto">
+          <Button sx={{ }} variant="contained">
+            Resume
+          </Button>
+          <p className="text-green-400">Resume </p>
       <Accordion
         // sx={{
         //   width: "15%",
