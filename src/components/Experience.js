@@ -20,12 +20,9 @@ export default function ControlledAccordions() {
           </Button>
           <p className="text-green-400">Resume </p>
       <Accordion
-        // sx={{
-        //   width: "15%",
-        //   margin: "auto",
-        //   marginRight: "18%",
-        //   marginTop: "1%",
-        // }}
+        sx={{
+            background: "#303030",
+        }}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -77,6 +74,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
@@ -112,6 +112,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
@@ -145,6 +148,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
@@ -181,6 +187,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
@@ -218,6 +227,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
@@ -250,6 +262,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
@@ -290,6 +305,9 @@ export default function ControlledAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        sx={{
+            background: "#303030",
+        }}
         // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
         expanded={expanded === "panel8"}
         onChange={handleChange("panel8")}
