@@ -1,6 +1,7 @@
 import './App.css';
 import MainBody from './components/MainBody';
 import NavBar from './components/NavBar';
+import Experience from './components/Experience';
 
 
 
@@ -10,6 +11,7 @@ function App() {
       
       <NavBar></NavBar>
       <MainBody />
+      <Experience />
 
       
     </div>
