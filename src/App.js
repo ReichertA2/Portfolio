@@ -7,7 +7,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div>
+    <div sx= {{}}>
       
       <NavBar></NavBar>
       <MainBody />
