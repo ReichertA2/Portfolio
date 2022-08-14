@@ -90,12 +90,12 @@ function SwipeableEdgeDrawer(props) {
           <Button onClick={toggleDrawer(true)}>Contact</Button>
         </div>
         <Link sx={{ marginRight: "-11%" }} href="https://github.com/ReichertA2">
-          <GitHubIcon />
+          <GitHubIcon sx={{marginRight:"0.5rem"}} />
           Github
         </Link>
 
         <Link href="https://www.linkedin.com/in/aydee-reichert">
-          <LinkedInIcon />
+          <LinkedInIcon sx={{marginRight:"0.5rem"}}  />
           LinkedIn
         </Link>
       </Box>
