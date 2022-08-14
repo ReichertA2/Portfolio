@@ -16,7 +16,7 @@ export default function MainBody() {
     <Box sx={{ background: "#303030", pt: 10 }}>
       <Card
         sx={{
-          mx: 65,
+          mx: 45,
           display: "flex",
           background: "#303030",
           border: "none",
@@ -24,20 +24,20 @@ export default function MainBody() {
         }}
       >
         {/* <CardContent sx={{textAlign: "center"}}> */}
-        <CardContent sx={{ width: "40%", margin: "auto" }}>
+        <CardContent sx={{ width: "56%", margin: "auto" }}>
           {/* <div sx={{display: "inline-block", width:"25%"}}> */}
           <Button sx={{ textAlign: "center", mb: 2 }} variant="contained">
             Full Stack Developer
           </Button>
 
           <Typography sx={{ fontSize: 35 }} gutterBottom>
-            Truth can only be found in one place: the code
+            Truth can only be found in one place: <span className="font-semibold opacity-80">the code</span>
           </Typography>
           {/* <Typography variant="h5" component="div">
             be{bull}nev{bull}o{bull}lent
           </Typography> */}
           {/* <Typography sx={{ mb: 1.5 }}>adjective</Typography> */}
-          <Typography variant="body2">
+          <Typography variant="body2" sx={{ width:"55%"}}>
             Hi, I am a Software Developer focused in React-Frontend and
             Flask-Backend utilizing PostgreSQL.
             {/* <br /> */}
