@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
-import pic from "../pic.jpg";
+import pic from "../new_pic3.png";
 
 // #background: "#303030"
 export default function MainBody() {
