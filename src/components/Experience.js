@@ -13,7 +13,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div sx={{}}>
+    <div className="w-1/3 m-auto">
       <Accordion
         // sx={{
         //   width: "15%",
