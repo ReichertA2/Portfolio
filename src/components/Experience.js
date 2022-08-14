@@ -5,6 +5,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
+import { shadows } from '@mui/system';
+
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -28,6 +30,8 @@ export default function ControlledAccordions() {
         <Accordion
           sx={{
             background: "#303030",
+            // boxShadow: 3 
+
             
           }}
           expanded={expanded === "panel1"}
@@ -52,6 +56,7 @@ export default function ControlledAccordions() {
               Programming, Regex, Flask, React, MUI, Git/GitHub, Jupyter
               Notebook, Node.JS, Postgres, SQL, Postman, RESTful APIs, Formik,
               Yup
+              <ul className="custom-list p-5">
               <li>
                 Created a full stack reading list application that allows users
                 to browse, add, and remove books from their reading list
@@ -79,6 +84,7 @@ export default function ControlledAccordions() {
                 Programmed a BlackJack game with Python OOP (Object Oriented
                 Programming) in Visual Studio Code.
               </li>
+              </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -105,6 +111,7 @@ export default function ControlledAccordions() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
+            <ul className="custom-list p-5">
               <li>
                 Analyze and track data creating productivity and output reports
                 for stakeholders and management.
@@ -117,6 +124,7 @@ export default function ControlledAccordions() {
                 Enhanced bias algorithms for properties to execute bias updates
                 for chemical components.
               </li>
+              </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -146,6 +154,7 @@ export default function ControlledAccordions() {
               <p>
                 Successfully implemented new SQC program with zero incidences
               </p>
+              <ul className="custom-list p-5">
               <li>
                 Led the Proficiency Testing Program (PTP) where samples are
                 logged in, distributed to designated labs, data reported to PTP
@@ -156,6 +165,7 @@ export default function ControlledAccordions() {
                 Constructed, monitored, and maintained limits and trends on 199
                 SQC charts as needed.
               </li>
+              </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -182,6 +192,7 @@ export default function ControlledAccordions() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
+            <ul className="custom-list p-5">
               <li>
                 Managed 10 full slates of testing daily, assigned workload, and
                 coordinated with sampler to obtain material.
@@ -195,6 +206,7 @@ export default function ControlledAccordions() {
                 Reduced the allowance of waivers to ensure overall quality
                 output standards are met.
               </li>
+              </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
