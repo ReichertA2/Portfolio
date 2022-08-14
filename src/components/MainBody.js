@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
-import pic from "../new_pic3.png";
+import pic from "../new_pic6.png";
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import Avatar from '@mui/material/Avatar';
 
@@ -39,14 +39,14 @@ export default function MainBody() {
       {/* <Button size="small">Learn More</Button> */}
       {/* </CardActions> */}
       <div sx={{}}>
-        <Avatar sx={{ background: "#424242", width: 60, height: 60}}>
+        {/* <Avatar sx={{ background: "#424242", width: 60, height: 60}}>
       <JavascriptIcon sx={{fontSize:100}}/>
-      </Avatar>
+      </Avatar> */}
       
         <img src={pic} alt={"profile"} width="270px" />
-        <Avatar sx={{ background: "#424242", width: 60, height: 60}}>
+        {/* <Avatar sx={{ background: "#424242", width: 60, height: 60}}>
       <JavascriptIcon sx={{fontSize:100}}/>
-      </Avatar>
+      </Avatar> */}
         
       </div>
       
