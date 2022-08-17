@@ -12,6 +12,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
+// import ThemeSwitch from "./ThemeSwitch";
 
 const drawerBleeding = 56;
 
@@ -19,12 +20,12 @@ const Root = styled("div")(({ theme }) => ({
   height: "100%",
   backgroundColor:
     theme.palette.mode === "dark"
-      ? "#303030"
+      ? "#2D2F33"
       : theme.palette.background.default,
 }));
 
 const StyledBox = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#303030" : grey[800],
+  backgroundColor: theme.palette.mode === "dark" ? "#2D2F33" : grey[800],
 }));
 
 // const Puller = styled(Box)(({ theme }) => ({
@@ -53,6 +54,7 @@ function SwipeableEdgeDrawer(props) {
     <Root>
       <CssBaseline />
       <Global
+      
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(90% - ${drawerBleeding}px)`,
@@ -98,6 +100,7 @@ function SwipeableEdgeDrawer(props) {
           <LinkedInIcon sx={{marginRight:"0.5rem"}}  />
           LinkedIn
         </Link>
+        {/* <ThemeSwitch/> */}
       </Box>
       {/* <div sx={{}}>
         <p>
@@ -110,6 +113,7 @@ function SwipeableEdgeDrawer(props) {
         </p>
       </div> */}
       <SwipeableDrawer
+      
         container={container}
         anchor="bottom"
         open={open}
@@ -122,6 +126,7 @@ function SwipeableEdgeDrawer(props) {
         }}
       >
         <StyledBox
+        
           sx={{
             position: "absolute",
             top: -drawerBleeding,
@@ -132,6 +137,7 @@ function SwipeableEdgeDrawer(props) {
             left: 0,
           }}
         >
+          
           {/* <Puller /> */}
           {/* <Typography sx={{ p: 2, color: "text.secondary" }}>
             51 results
@@ -145,7 +151,7 @@ function SwipeableEdgeDrawer(props) {
             overflow: "auto",
           }}
         >
-          <Skeleton variant="rectangular" height="100%" />
+          <Skeleton  variant="rectangular" height="100%" />
         </StyledBox>
       </SwipeableDrawer>
     </Root>

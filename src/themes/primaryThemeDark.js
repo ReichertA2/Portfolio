@@ -7,7 +7,7 @@ export const themeOptions = {
       type: 'dark',
       mode: 'dark',
         background: {
-          default: "#252424"
+          default: "#25262A"
         },
       primary: {
         main: '#7deaa2',

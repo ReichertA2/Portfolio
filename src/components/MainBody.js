@@ -13,12 +13,12 @@ import Avatar from "@mui/material/Avatar";
 // #background: "#303030"
 export default function MainBody() {
   return (
-    <Box sx={{ background: "#303030", pt: 10 }}>
+    <Box sx={{ background: "#2D2F33", pt: 10 }}>
       <Card
         sx={{
           mx: 45,
           display: "flex",
-          background: "#303030",
+          background: "#2D2F33",
           border: "none",
           boxShadow: "none",
         }}

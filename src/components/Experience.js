@@ -29,7 +29,7 @@ export default function ControlledAccordions() {
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
-            background: "#303030",
+            background: "#2D2F33",
             // boxShadow: 3 
 
             
@@ -90,7 +90,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#303030",
+            background: "#2D2F33",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel2"}
@@ -130,7 +130,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#303030",
+            background: "#2D2F33",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel3"}
@@ -171,7 +171,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#303030",
+            background: "#2D2F33",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel4"}
