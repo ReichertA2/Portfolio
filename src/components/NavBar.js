@@ -12,6 +12,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
+
 // import ThemeSwitch from "./ThemeSwitch";
 
 const drawerBleeding = 56;
@@ -77,7 +78,7 @@ function SwipeableEdgeDrawer(props) {
           // marginRight: "200px",
         }}
       >
-        <Typography component="h1" sx={{fontSize: "175% !important" }}>Aydee Reichert</Typography>
+        <Typography component="h1" sx={{fontSize: "175% !important"}}><strong>Aydee</strong> Reichert</Typography>
         
         <div sx={{}}>
           <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>

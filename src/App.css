@@ -18,7 +18,9 @@ ul.custom-list li:before {
   top: 1.25em;
 }
 
-
+/* span::first-line{
+  font-weight: bold;
+} */
 
 
 
