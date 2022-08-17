@@ -5,8 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
-import { shadows } from '@mui/system';
-
+import { shadows } from "@mui/system";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -18,9 +17,9 @@ export default function ControlledAccordions() {
   return (
     <div className="w-4/5 ml-72">
       <div className="inline-block w-1/3 align-top text-right" sx={{}}>
-        <p  className="text-green-400 p-4 px-44 text-2xl">
-          Background
-        </p>
+        <section id="experience">
+          <p className="text-green-400 p-4 px-44 text-2xl">Background</p>
+        </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
     </Button> */}
@@ -29,10 +28,9 @@ export default function ControlledAccordions() {
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
-            backgroundImage: 'linear-gradient(to top, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)'
-            // boxShadow: 3 
-
-            
+            backgroundImage:
+              "linear-gradient(to top, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)",
+            // boxShadow: 3
           }}
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
@@ -57,40 +55,42 @@ export default function ControlledAccordions() {
               Notebook, Node.JS, Postgres, SQL, Postman, RESTful APIs, Formik,
               Yup
               <ul className="custom-list p-5">
-              <li>
-                Created a full stack reading list application that allows users
-                to browse, add, and remove books from their reading list
-                utilizing API wrappers, reducer, Formik, Yup, and custom react
-                hooks.
-              </li>
-              <li>
-                Generated a web application that allows users to search by city
-                to obtain weather information by using the Open Weather API with
-                JavaScript with Axios.
-              </li>
-              <li>
-                Built an API for a book website to allow users to create a
-                reading list using RESTful API in flask.
-              </li>
-              <li>
-                Crafted a multi-page flask application for a pokemon battle that
-                used SQL to create the user and pokemon database and configured
-                the app to include registration, edit profile, and login.
-              </li>
-              <li>
-                Produced a car dealership database using ERD with elephantSQL.
-              </li>
-              <li>
-                Programmed a BlackJack game with Python OOP (Object Oriented
-                Programming) in Visual Studio Code.
-              </li>
+                <li>
+                  Created a full stack reading list application that allows
+                  users to browse, add, and remove books from their reading list
+                  utilizing API wrappers, reducer, Formik, Yup, and custom react
+                  hooks.
+                </li>
+                <li>
+                  Generated a web application that allows users to search by
+                  city to obtain weather information by using the Open Weather
+                  API with JavaScript with Axios.
+                </li>
+                <li>
+                  Built an API for a book website to allow users to create a
+                  reading list using RESTful API in flask.
+                </li>
+                <li>
+                  Crafted a multi-page flask application for a pokemon battle
+                  that used SQL to create the user and pokemon database and
+                  configured the app to include registration, edit profile, and
+                  login.
+                </li>
+                <li>
+                  Produced a car dealership database using ERD with elephantSQL.
+                </li>
+                <li>
+                  Programmed a BlackJack game with Python OOP (Object Oriented
+                  Programming) in Visual Studio Code.
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
           sx={{
-            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
+            backgroundImage:
+              "linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel2"}
@@ -111,26 +111,27 @@ export default function ControlledAccordions() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            <ul className="custom-list p-5">
-              <li>
-                Analyze and track data creating productivity and output reports
-                for stakeholders and management.
-              </li>
-              <li>
-                Create targets and release limits on limiting properties for
-                Diesel and Mogas to mitigate quality disputes.
-              </li>
-              <li>
-                Enhanced bias algorithms for properties to execute bias updates
-                for chemical components.
-              </li>
+              <ul className="custom-list p-5">
+                <li>
+                  Analyze and track data creating productivity and output
+                  reports for stakeholders and management.
+                </li>
+                <li>
+                  Create targets and release limits on limiting properties for
+                  Diesel and Mogas to mitigate quality disputes.
+                </li>
+                <li>
+                  Enhanced bias algorithms for properties to execute bias
+                  updates for chemical components.
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
           sx={{
-            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
+            backgroundImage:
+              "linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel3"}
@@ -155,23 +156,24 @@ export default function ControlledAccordions() {
                 Successfully implemented new SQC program with zero incidences
               </p>
               <ul className="custom-list p-5">
-              <li>
-                Led the Proficiency Testing Program (PTP) where samples are
-                logged in, distributed to designated labs, data reported to PTP
-                program (ASTM, NEG, Texas Regional), and reports submitted to
-                the lab.
-              </li>
-              <li>
-                Constructed, monitored, and maintained limits and trends on 199
-                SQC charts as needed.
-              </li>
+                <li>
+                  Led the Proficiency Testing Program (PTP) where samples are
+                  logged in, distributed to designated labs, data reported to
+                  PTP program (ASTM, NEG, Texas Regional), and reports submitted
+                  to the lab.
+                </li>
+                <li>
+                  Constructed, monitored, and maintained limits and trends on
+                  199 SQC charts as needed.
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
           sx={{
-            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
+            backgroundImage:
+              "linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel4"}
@@ -192,20 +194,20 @@ export default function ControlledAccordions() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            <ul className="custom-list p-5">
-              <li>
-                Managed 10 full slates of testing daily, assigned workload, and
-                coordinated with sampler to obtain material.
-              </li>
-              <li>
-                Lead a team of 6 laboratory technicians and chemists responsible
-                for the analysis of samples and data produced.
-              </li>
-              <li>Held a record of zero instances of test failures.</li>
-              <li>
-                Reduced the allowance of waivers to ensure overall quality
-                output standards are met.
-              </li>
+              <ul className="custom-list p-5">
+                <li>
+                  Managed 10 full slates of testing daily, assigned workload,
+                  and coordinated with sampler to obtain material.
+                </li>
+                <li>
+                  Lead a team of 6 laboratory technicians and chemists
+                  responsible for the analysis of samples and data produced.
+                </li>
+                <li>Held a record of zero instances of test failures.</li>
+                <li>
+                  Reduced the allowance of waivers to ensure overall quality
+                  output standards are met.
+                </li>
               </ul>
             </Typography>
           </AccordionDetails>
@@ -375,7 +377,6 @@ export default function ControlledAccordions() {
     </div>
   );
 }
-
 
 // 28272A
 // 2D2F33

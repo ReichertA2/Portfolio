@@ -81,16 +81,18 @@ function SwipeableEdgeDrawer(props) {
         <Typography component="h1" sx={{fontSize: "175% !important"}}><strong>Aydee</strong> Reichert</Typography>
         
         <div sx={{}}>
-          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+          <a href id="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
             About Me
-          </Button>
-          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+          </a>
+          <a href='#experience' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
             Experience
-          </Button>
-          <Button sx={{ marginRight: "2rem" }} onClick={toggleDrawer(true)}>
+          </a>
+          <a href='#project' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
             Projects
-          </Button>
-          <Button onClick={toggleDrawer(true)}>Contact</Button>
+          </a>
+          <a href='#contact' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          Contact
+          </a>
         </div>
         <Link sx={{ marginRight: "-11%" }} href="https://github.com/ReichertA2">
           <GitHubIcon sx={{marginRight:"0.5rem"}} />

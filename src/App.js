@@ -5,6 +5,8 @@ import Experience from './components/Experience';
 
 
 
+
+
 function App() {
   return (
     <div sx= {{}}>
@@ -12,6 +14,9 @@ function App() {
       <NavBar></NavBar>
       <MainBody />
       <Experience />
+    
+    
+      
 
       
     </div>
