@@ -29,7 +29,7 @@ export default function ControlledAccordions() {
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
-            background: "#2D2F33",
+            backgroundImage: 'linear-gradient(to top, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)'
             // boxShadow: 3 
 
             
@@ -90,7 +90,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#2D2F33",
+            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel2"}
@@ -130,7 +130,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#2D2F33",
+            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel3"}
@@ -171,7 +171,7 @@ export default function ControlledAccordions() {
         </Accordion>
         <Accordion
           sx={{
-            background: "#2D2F33",
+            backgroundImage: 'linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)'
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel4"}
@@ -375,3 +375,7 @@ export default function ControlledAccordions() {
     </div>
   );
 }
+
+
+// 28272A
+// 2D2F33
