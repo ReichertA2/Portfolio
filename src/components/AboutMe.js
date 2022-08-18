@@ -15,7 +15,8 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   height: 300,
   width:200,
-  marginLeft:270
+  marginLeft:270,
+  marginTop:80
 }));
 
 export default function AboutMe() {
@@ -37,7 +38,7 @@ export default function AboutMe() {
             <p style={{ fontSize: 15 }}>Bootstrap</p>
           </Item>
         </Grid>
-        <Grid item xs={1.56}>
+        <Grid item xs={1.55}>
           <Item>
             <ConstructionOutlinedIcon
               color="primary"
