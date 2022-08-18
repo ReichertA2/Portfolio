@@ -5,7 +5,9 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
-import Icon from "@mui/material/Icon";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -40,10 +42,12 @@ export default function AboutMe() {
         </Grid>
         <Grid item xs={1.55}>
           <Item>
-            <ConstructionOutlinedIcon
+          {/* <FontAwesomeIcon icon="fa-solid fa-laptop-code" /> */}
+          <i class="fa-solid fa-laptop-code"></i>
+            {/* <ConstructionOutlinedIcon
               color="primary"
               fontSize="large"
-            ></ConstructionOutlinedIcon>
+            ></ConstructionOutlinedIcon> */}
             <h1 style={{ fontSize: 20 }}>Back End</h1>
             <p style={{ fontSize: 15 }}>Flask</p>
             <p style={{ fontSize: 15 }}>Python</p>
