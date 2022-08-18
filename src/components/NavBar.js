@@ -81,7 +81,7 @@ function SwipeableEdgeDrawer(props) {
         <Typography component="h1" sx={{fontSize: "175% !important"}}><strong>Aydee</strong> Reichert</Typography>
         
         <div sx={{}}>
-          <a href id="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          <a href ="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
             About Me
           </a>
           <a href='#experience' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >

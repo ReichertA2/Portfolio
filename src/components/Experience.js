@@ -15,11 +15,11 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div className="w-4/5 ml-72">
+    <div className="w-4/5 ml-72 mt-96">
       <div className="inline-block w-1/3 align-top text-right" sx={{}}>
         <section id="experience">
-          <Button variant="outlined" className="text-green-400 p-4 px-44 text-2xl">Background</Button>
-        </section>
+          <Button  className="text-green-400 p-4 px-44 text-2xl">Background</Button>
+          </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
     </Button> */}
@@ -373,8 +373,12 @@ export default function ControlledAccordions() {
             </Typography>
           </AccordionDetails>
         </Accordion> */}
+        
+        
       </div>
+      
     </div>
+    
   );
 }
 
