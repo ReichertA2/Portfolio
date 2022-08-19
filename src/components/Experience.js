@@ -8,6 +8,8 @@ import Button from "@mui/material/Button";
 import { shadows } from "@mui/system";
 import Box from "@mui/material/Box";
 
+
+
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -31,6 +33,7 @@ export default function ControlledAccordions() {
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
+            border:'none',
             backgroundImage:
               "linear-gradient(to top, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)",
             // boxShadow: 3
@@ -43,7 +46,7 @@ export default function ControlledAccordions() {
             aria-controls="panel1bh-content"
             id="panel1bh-header"
           >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
+            <Typography sx={{ width: "33%", flexShrink: 0, }}>
               Coding Temple
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>

@@ -18,6 +18,10 @@ ul.custom-list li:before {
   top: 1.25em;
 }
 
+.MuiPaper-root.MuiAccordion-root::before {
+  display:none
+}
+
 /* span::first-line{
   font-weight: bold;
 } */
