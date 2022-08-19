@@ -9,14 +9,17 @@ import { blue } from "@mui/material/colors";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  background:  "#25262A",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
+ 
   height: 300,
   width: 200,
   marginLeft: 270,
+//   backgroundColor: theme.palette.background.default
+  
 //   marginTop: 80,
 }));
 
