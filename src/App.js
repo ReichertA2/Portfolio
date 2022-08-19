@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Experience from './components/Experience';
 import AboutMe from './components/AboutMe';
 import SkillsTitle from './components/SkillsTitle';
+import Contact from './components/Contact';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <SkillsTitle/>
       <AboutMe/>
       <Experience />
+      <Contact />
     
     
       

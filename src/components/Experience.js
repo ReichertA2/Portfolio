@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import { shadows } from "@mui/system";
+import Box from "@mui/material/Box";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -15,10 +16,11 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div className="w-4/5 ml-72 mt-96">
+    <Box style={{ background:'#2D2F33', marginTop:100}} className="mt-96">
+    <div style={{marginTop:100, background: '#2D2F33'}} className="w-4/5 ml-72 mt-96">
       <div className="inline-block w-1/3 align-top text-right" sx={{}}>
         <section id="experience">
-          <Button  className="text-green-400 p-4 px-44 text-2xl">Background</Button>
+          <h1 style={{fontSize:25, color:'#7deaa2'}} className="text-green-400 p-4 px-44 text-2xl">Background</h1>
           </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
@@ -378,6 +380,7 @@ export default function ControlledAccordions() {
       </div>
       
     </div>
+    </Box>
     
   );
 }
