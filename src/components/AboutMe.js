@@ -59,7 +59,7 @@ export default function AboutMe() {
             {/* <FontAwesomeIcon icon="fa-solid fa-laptop-code" /> */}
             <i
               style={{ fontSize: 30, color: "#7deaa2", marginBottom: 15 }}
-              class="fa-solid fa-terminal"
+              class="fa-solid fa-terminal "
             ></i>
 
             {/* fa-counter-background-color */}

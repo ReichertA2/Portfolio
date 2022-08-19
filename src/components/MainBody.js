@@ -26,7 +26,7 @@ export default function MainBody() {
         {/* <CardContent sx={{textAlign: "center"}}> */}
         <CardContent sx={{ width: "56%", margin: "auto" }}>
           {/* <div sx={{display: "inline-block", width:"25%"}}> */}
-          <Button sx={{ textAlign: "center", mb: 2 }} variant="contained">
+          <Button sx={{ textAlign: "center", mb: 2 }} variant="outlined">
             Full Stack Developer
           </Button>
 
