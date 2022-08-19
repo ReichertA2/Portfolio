@@ -45,7 +45,7 @@ export default function AboutMe() {
               style={{ fontSize: 30, color: "#7deaa2", marginBottom: 15 }}
               class="fa-solid fa-laptop-code"
             ></i>
-            <h1 style={{ fontSize: 20, marginBottom: 15 }}>Front End</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Front End</h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>React</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>JavaScript</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>HTML</p>
@@ -67,7 +67,7 @@ export default function AboutMe() {
               color="primary"
               fontSize="large"
             ></ConstructionOutlinedIcon> */}
-            <h1 style={{ fontSize: 20, marginBottom: 15 }}>Back End</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Back End</h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Flask</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Python</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>PostgreSQL</p>
@@ -83,7 +83,7 @@ export default function AboutMe() {
               fontSize="large"
               style={{ marginBottom: 10 }}
             ></ConstructionOutlinedIcon>
-            <h1 style={{ fontSize: 20, marginBottom: 15 }}>Tools</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Tools</h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Git</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Github</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Visual Studio Code</p>
