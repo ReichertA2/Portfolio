@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
   height: 320,
   width: 200,
   marginLeft: 270,
-  marginTop: 80,
+//   marginTop: 80,
 }));
 
 export default function AboutMe() {
@@ -82,8 +82,8 @@ export default function AboutMe() {
           <Item style={{ width: 400 }}>
             <section id="aboutMe">
               <div style={{}}>
-                <h1 style={{ fontSize: "2.1875rem" }}>About Me</h1>
-                <Button>Developer</Button>
+                
+                <Button style={{fontSize:20}}>Developer</Button>
                 <p style={{ color: "#606266" }} className="opacity-80">
                   As a Full Stack Developer, I am creative, innovative and
                   passionate about bringing solutions to challenging issues. I
@@ -94,7 +94,7 @@ export default function AboutMe() {
                   of an application and love how backend makes the connection.
                   Cannot wait to join your team!!
                 </p>
-                <Button style={{ marginTop: 10 }} variant="outlined">
+                <Button style={{ marginTop:15 }} variant="outlined">
                   Lets Connect
                 </Button>
               </div>
