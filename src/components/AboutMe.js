@@ -5,8 +5,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
-import { blue } from "@mui/material/colors";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
   background:  "#25262A",
@@ -18,6 +18,17 @@ const Item = styled(Paper)(({ theme }) => ({
   height: 300,
   width: 200,
   marginLeft: 270,
+  showGridLines: false,
+  border: "none",
+  boxShadow: "none",
+//   border: "none",
+//   boxShadow: "none",
+  
+  
+  
+  
+  
+  
 //   backgroundColor: theme.palette.background.default
   
 //   marginTop: 80,
@@ -25,10 +36,11 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function AboutMe() {
   return (
-    <Box sx={{ width: "100%" }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+    <Box sx={{ width: "100%"}}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
         <Grid item xs={1.56}>
-          <Item>
+        
+          <Item style={{}}>
             <i
               style={{ fontSize: 30, color: "#7deaa2", marginBottom: 15 }}
               class="fa-solid fa-laptop-code"
