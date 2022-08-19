@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
-  height: 320,
+  height: 300,
   width: 200,
   marginLeft: 270,
 //   marginTop: 80,
