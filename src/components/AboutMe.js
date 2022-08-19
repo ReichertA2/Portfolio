@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
+import { blue } from "@mui/material/colors";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -27,49 +28,52 @@ export default function AboutMe() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={1.56}>
           <Item>
-            <ConstructionOutlinedIcon
-              color="primary"
-              fontSize="large"
-            ></ConstructionOutlinedIcon>
-            <h1 style={{ fontSize: 20 }}>Front End</h1>
-            <p style={{ fontSize: 15 }}>React</p>
-            <p style={{ fontSize: 15 }}>JavaScript</p>
-            <p style={{ fontSize: 15 }}>HTML</p>
-            <p style={{ fontSize: 15 }}>CSS</p>
-            <p style={{ fontSize: 15 }}>MUI</p>
-            <p style={{ fontSize: 15 }}>Bootstrap</p>
+          <i 
+              style={{fontSize:30, color:'#7deaa2', marginBottom:15}}class="fa-solid fa-laptop-code"></i>
+            <h1 style={{ fontSize: 20, marginBottom:15 }}>Front End</h1>
+            <p style={{ fontSize: 15, marginBottom:10 }}>React</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>JavaScript</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>HTML</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>CSS</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>MUI</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Bootstrap</p>
           </Item>
         </Grid>
         <Grid item xs={1.55}>
           <Item>
           {/* <FontAwesomeIcon icon="fa-solid fa-laptop-code" /> */}
-          <i class="fa-solid fa-laptop-code"></i>
+          <i 
+              style={{fontSize:30, color:'#7deaa2', marginBottom:15}}class="fa-solid fa-terminal"></i>
+             
+              {/* fa-counter-background-color */}
             {/* <ConstructionOutlinedIcon
               color="primary"
               fontSize="large"
             ></ConstructionOutlinedIcon> */}
-            <h1 style={{ fontSize: 20 }}>Back End</h1>
-            <p style={{ fontSize: 15 }}>Flask</p>
-            <p style={{ fontSize: 15 }}>Python</p>
-            <p style={{ fontSize: 15 }}>PostgreSQL</p>
-            <p style={{ fontSize: 15 }}>RestfulAPI</p>
-            <p style={{ fontSize: 15 }}>Postman</p>
-            <p style={{ fontSize: 15 }}>Heroku</p>
+            <h1 style={{ fontSize: 20, marginBottom:15 }}>Back End</h1>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Flask</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Python</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>PostgreSQL</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>RestfulAPI</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Postman</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Heroku</p>
           </Item>
         </Grid>
         <Grid item xs={1.8}>
           <Item>
             <ConstructionOutlinedIcon
               color="primary"
-              fontSize="large"
+              fontSize='large'
+              style={{marginBottom:10}}
+
             ></ConstructionOutlinedIcon>
-            <h1 style={{ fontSize: 20 }}>Tools</h1>
-            <p style={{ fontSize: 15 }}>Git</p>
-            <p style={{ fontSize: 15 }}>Github</p>
-            <p style={{ fontSize: 15 }}>Visual Studio Code</p>
-            <p style={{ fontSize: 15 }}>npm</p>
-            <p style={{ fontSize: 15 }}>Formik</p>
-            <p style={{ fontSize: 15 }}>Yup</p>
+            <h1 style={{ fontSize: 20, marginBottom:15 }}>Tools</h1>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Git</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Github</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Visual Studio Code</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>npm</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Formik</p>
+            <p style={{ fontSize: 15, marginBottom:10 }}>Yup</p>
           </Item>
         </Grid>
         <Grid item xs={4}>
