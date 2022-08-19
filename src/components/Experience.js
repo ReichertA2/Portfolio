@@ -13,20 +13,21 @@ export default function ControlledAccordions() {
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
+    
   };
 
   return (
-    <Box style={{ background:'#2D2F33', marginTop:100}} className="mt-96">
+    <Box style={{ background:'#2D2F33', marginTop:100, marginBottom:100}} className="mt-96">
     <div style={{marginTop:100, background: '#2D2F33'}} className="w-4/5 ml-72 mt-96">
       <div className="inline-block w-1/3 align-top text-right" sx={{}}>
         <section id="experience">
-          <h1 style={{fontSize:25, color:'#7deaa2'}} className="text-green-400 p-4 px-44 text-2xl">Background</h1>
+          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Background</h1>
           </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
     </Button> */}
       </div>
-      <div className="w-3/6 p-3 inline-block">
+      <div style={{marginTop:100, marginBottom:100}} className="w-3/6 p-3 inline-block" >
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
@@ -175,7 +176,7 @@ export default function ControlledAccordions() {
         <Accordion
           sx={{
             backgroundImage:
-              "linear-gradient(to right top, #2d2f33, #2b2d30, #292a2d, #27282b, #252628, #252628, #252628, #252628, #27282b, #292a2d, #2b2d30, #2d2f33)",
+            "linear-gradient(to bottom, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)",
           }}
           // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
           expanded={expanded === "panel4"}
@@ -214,167 +215,7 @@ export default function ControlledAccordions() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        {/* <Accordion
-          sx={{
-            background: "#303030",
-          }}
-          // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
-          expanded={expanded === "panel5"}
-          onChange={handleChange("panel5")}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel5bh-content"
-            id="panel5bh-header"
-          >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
-              ExxonMobil
-            </Typography>
-            <Typography sx={{ color: "text.secondary" }}>
-              <p>Chemist</p>
-              08/2015 - 01/2017
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>
-                Assigned to lead special projects and auditing processes, found
-                issues with smoke point and viscosity tests, and worked with the
-                technology team to ensure correct outcomes.
-              </li>
-              <li>
-                Decreased equipment incidences by adding an extra standard to
-                ensure the maintenance schedule is followed.
-              </li>
-              <li>
-                Adapted and improved in house test methods to improve quality
-                and deliver test results on time.
-              </li>
-              <li>Trained technicians on new testing methods.</li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          sx={{
-            background: "#303030",
-          }}
-          // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
-          expanded={expanded === "panel6"}
-          onChange={handleChange("panel6")}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel6bh-content"
-            id="panel6bh-header"
-          >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
-              ExxonMobil
-            </Typography>
-            <Typography sx={{ color: "text.secondary" }}>
-              <p>Laboratory Technician</p>
-              03/2015 - 08/2015
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>
-                Analyzed petroleum samples using ASTM and ExxonMobil QP&G.
-              </li>
-              <li>
-                Utilized error -checking tools to ensure data is reported
-                correctly.
-              </li>
-              <li>
-                Performed and maintained daily SQC for each instrument,
-                calibrated ICP and Carbon-LECO and other instruments.
-              </li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          sx={{
-            background: "#303030",
-          }}
-          // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
-          expanded={expanded === "panel7"}
-          onChange={handleChange("panel7")}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel7bh-content"
-            id="panel7bh-header"
-          >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
-              Intertek
-            </Typography>
-            <Typography sx={{ color: "text.secondary" }}>
-              <p>Crude Assay Supervisor</p>
-              01/2012 - 03/2015
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>
-                Coordinated with the training department to cross train
-                technicians on the full complement of tests.
-              </li>
-              <li>
-                Analyzed data and reported results directly to clients –
-                ExxonMobil, Chevron, and Western Refining.
-              </li>
-
-              <li>
-                Ran and reviewed SQC data to ensure instruments are working
-                properly.
-              </li>
-              <li>
-                Integrated Google documents to better manage the paperwork flow,
-                communications and manage the testing schedule, confirm testing
-                methods, obtain client approvals, input data, and improve
-                turnaround time.
-              </li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion
-          sx={{
-            background: "#303030",
-          }}
-          // sx={{ width: "15%", margin: "auto", marginRight: "18%" }}
-          expanded={expanded === "panel8"}
-          onChange={handleChange("panel8")}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel8bh-content"
-            id="panel8bh-header"
-          >
-            <Typography sx={{ width: "33%", flexShrink: 0 }}>
-              Intertek
-            </Typography>
-            <Typography sx={{ color: "text.secondary" }}>
-              <p>Chemist</p>
-              01/2010 - 01/2012
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              <li>Performed maintenance on ICP-MS equipment.</li>
-
-              <li>
-                Performed full slate testing such as API, sulfur content and
-                kinematic viscosity.
-              </li>
-              <li>
-                Prepared test solutions and reagents for laboratory testing.
-              </li>
-              <li>
-                Calibrated and performed testing on CHNS analyzer instrument to
-                determine sample elemental composition.
-              </li>
-            </Typography>
-          </AccordionDetails>
-        </Accordion> */}
+        
         
         
       </div>
