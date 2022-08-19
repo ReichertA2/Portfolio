@@ -5,6 +5,7 @@ import Experience from './components/Experience';
 import AboutMe from './components/AboutMe';
 import SkillsTitle from './components/SkillsTitle';
 import Contact from './components/Contact';
+import Project from './components/Project'
 
 
 
@@ -13,20 +14,21 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div sx= {{}}>
+    <main sx= {{}}>
       
       <NavBar></NavBar>
       <MainBody />
       <SkillsTitle/>
       <AboutMe/>
       <Experience />
+      <Project />
       <Contact />
     
     
       
 
       
-    </div>
+    </main>
   );
 }
 
