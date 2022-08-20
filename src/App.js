@@ -9,14 +9,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.scss";
 import FlipCard from "./components/FlipCard";
 import ResumeScannerComputer from "../src/ResumeScannerComputer.PNG";
-import Pokemon from "../src/Pokemon.PNG";
-import Pokemon2 from "../src/Pokemon2.PNG";
+import PokemonConsole from "../src/PokemonConsole.png";
+import PokemonComputer from "../src/PokemonComputer.png";
 
 const cards = [
   {
     id: "1",
     variant: "hover",
-    front: <img src={ResumeScannerComputer} alt={" resume scanner project"} />,
+    front: <img  src={ResumeScannerComputer} alt={" resume scanner project"} width='400px' height='600px'/>,
     back: (
       <>
         <h1>Resume Scanner</h1>
@@ -33,13 +33,13 @@ const cards = [
   {
     id: "2",
     variant: "hover",
-    front: <img src={Pokemon} alt={" pokemon application"} />,
+    front: <img src={PokemonComputer} alt={" pokemon application"} width='400px' height='600px'/>,
     back: "Back",
   },
   {
     id: "3",
     variant: "hover",
-    front: <img src={Pokemon2} alt={" pokemon application"} />,
+    front: <img src={PokemonComputer} alt={" pokemon application"} className="" />,
     back: "Back",
   },
 ];
