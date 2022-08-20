@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 
@@ -109,9 +110,9 @@ export default function AboutMe() {
                   of an application and love how backend makes the connection.
                   Cannot wait to join your team!!
                 </p>
-                <a href="mailto:aydee0112@yahoo.com"><Button style={{ marginTop:15 }} variant="outlined">
+                <Button style={{ marginTop:15 }} variant="outlined"><LinkedInIcon sx={{marginRight:"0.5rem"}}/>
                   Lets Connect
-                </Button></a>
+                </Button>
               </div>
             </section>
           </Item>

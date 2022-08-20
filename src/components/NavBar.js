@@ -94,12 +94,12 @@ function SwipeableEdgeDrawer(props) {
           Contact
           </a>
         </div>
-        <Link sx={{ marginRight: "-11%" }} href="https://github.com/ReichertA2">
+        <Link sx={{ marginRight: "-11%", textDecoration:'none' }} href="https://github.com/ReichertA2">
           <GitHubIcon sx={{marginRight:"0.5rem"}} />
           Github
         </Link>
 
-        <Link href="https://www.linkedin.com/in/aydee-reichert">
+        <Link style={{textDecoration:'none'}}href="https://www.linkedin.com/in/aydee-reichert">
           <LinkedInIcon sx={{marginRight:"0.5rem"}}  />
           LinkedIn
         </Link>
