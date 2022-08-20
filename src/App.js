@@ -43,7 +43,15 @@ function App() {
       <SkillsTitle/>
       <AboutMe/>
       <Experience />
-      <FlipCard />
+      <div className="container">
+      <div className="row h-100">
+        <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
+          {cards.map((card) => (
+            <FlipCard key={card.id} card={card} />
+          ))}
+        </div>
+      </div>
+    </div>
       <Contact />
     
     
