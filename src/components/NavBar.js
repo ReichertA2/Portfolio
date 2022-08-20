@@ -81,16 +81,16 @@ function SwipeableEdgeDrawer(props) {
         <Typography component="h1" sx={{fontSize: "175% !important"}}><strong>Aydee</strong> Reichert</Typography>
         
         <div sx={{}}>
-          <a href ="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          <a href ="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
             About Me
           </a>
-          <a href='#experience' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          <a href='#experience' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
             Experience
           </a>
-          <a href='#project' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          <a href='#project' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
             Projects
           </a>
-          <a href='#contact' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em" }}  >
+          <a href='#contact' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
           Contact
           </a>
         </div>
