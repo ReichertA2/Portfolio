@@ -18,14 +18,14 @@ const cards = [
   },
   {
     id: "2",
-    variant: "click",
-    front: "Click",
+    variant: "hover",
+    front: "Hover",
     back: "Back"
   },
   {
     id: "3",
-    variant: "focus",
-    front: "Focus",
+    variant: "hover",
+    front: "Hover",
     back: "Back"
   }
 ];
