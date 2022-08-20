@@ -109,9 +109,9 @@ export default function AboutMe() {
                   of an application and love how backend makes the connection.
                   Cannot wait to join your team!!
                 </p>
-                <Button style={{ marginTop:15 }} variant="outlined">
+                <a href="mailto:aydee0112@yahoo.com"><Button style={{ marginTop:15 }} variant="outlined">
                   Lets Connect
-                </Button>
+                </Button></a>
               </div>
             </section>
           </Item>
