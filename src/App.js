@@ -16,7 +16,7 @@ const cards = [
   {
     id: "1",
     variant: "hover",
-    front: <img  src={ResumeScannerComputer3} alt={" resume scanner project"}/>,
+    front: <img  src={ResumeScannerComputer3} alt={" resume scanner project"} />,
     back: (
       <>
         <h1>Resume Scanner</h1>
