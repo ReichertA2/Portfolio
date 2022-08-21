@@ -98,7 +98,7 @@ function App() {
       <SkillsTitle />
       <AboutMe />
       <Experience />
-      <div className="container">
+      <div id='project'className="container">My Projects
         <div className="row h-100">
           <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
             {cards.map((card) => (

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -8,12 +8,14 @@ body {
 
 .container {
   height: 100vh;
+  
 }
 
 .flip-card-outer {
   width: 400px;
   height: 300px;
   margin: 25px 0;
+ 
   
 
   // &.focus-trigger:focus {
@@ -27,14 +29,17 @@ body {
     position: relative;
     width: inherit;
     height: inherit;
+   
 
 
     &.hover-trigger:hover {
       transform: rotateY(180deg);
+     
     }
 
     &.showBack {
       transform: rotateY(180deg);
+      
     }
   
     .card {
