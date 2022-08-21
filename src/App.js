@@ -15,6 +15,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import Button from "@mui/material/Button";
+import Project from "./components/Project"
 
 const cards = [
   {
@@ -122,8 +123,9 @@ function App() {
       <SkillsTitle />
       <AboutMe />
       <Experience />
-      <div id="project" className="container">
-        <div className="row h-100">
+      <Project/>
+      <div  className="container" style={{}}>
+        <div >
           <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
             {cards.map((card) => (
               <FlipCard key={card.id} card={card} />
