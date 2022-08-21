@@ -11,36 +11,82 @@ import FlipCard from "./components/FlipCard";
 import ResumeScannerComputer3 from "../src/ResumeScannerComputer3.png";
 import PokemonConsole from "../src/PokemonConsole.png";
 import PokemonComputer from "../src/PokemonComputer.png";
+import WorkIcon from "@mui/icons-material/Work";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 
 const cards = [
   {
     id: "1",
     variant: "hover",
-    front: <img  src={ResumeScannerComputer3} alt={" resume scanner project"} />,
+    front: <img src={ResumeScannerComputer3} alt={" resume scanner project"} />,
     back: (
-      <>
-        <h1>Resume Scanner</h1>
-        <p>
+      <div style={{ textAlign: "center" }}>
+        <WorkIcon style={{ color: "#7deaa2" }}></WorkIcon>
+        <h1 style={{ fontSize: 20 }}>Resume Scanner</h1>
+        <p
+          style={{
+            fontSize: 15,
+            color: "rgba(255, 255, 255, 0.7)",
+            fontWeight: 400,
+          }}
+        >
           Application that scans resume and multiple job descriptions to provide
-          the matching and missing keyword/phrases to get through the applicant
+          the matching and missing keyword/phrases to help user get through the applicant
           tracking system.
         </p>
-        <p>React, Flask, Python, JavaScript, PostgreSQL, Postman</p>
+        <p style={{ fontSize: 14 }}>
+          Flask, Python, React, JavaScript, PostgreSQL, MUI, CSS, HTML, Formik, Yup
+        </p>
         {/* <a href=></a> add link of resume scanner and link to code*/}
-      </>
+      </div>
     ),
   },
   {
     id: "2",
     variant: "hover",
-    front: <img src={PokemonComputer} alt={" pokemon application"} />,
-    back: "Back",
+    front: <img src={PokemonComputer} alt={" reading list"} />,
+    back: (
+      <div style={{ textAlign: "center" }}>
+        <AutoStoriesIcon style={{ color: "#7deaa2" }}></AutoStoriesIcon>
+        <h1 style={{ fontSize: 20 }}>Reading List</h1>
+        <p
+          style={{
+            fontSize: 15,
+            color: "rgba(255, 255, 255, 0.7)",
+            fontWeight: 400,
+          }}
+        >
+          Application that allows users to browse, remove, and add books to their reading list.
+        </p>
+        <p style={{ fontSize: 14 }}>API, React, JavaScript, MUI, CSS, HTML</p>
+        {/* <a href=></a> add link of resume scanner and link to code*/}
+      </div>
+    ),
   },
   {
     id: "3",
     variant: "hover",
-    front: <img src={PokemonComputer} alt={" pokemon application"} className="" />,
-    back: "Back",
+    front: (
+      <img src={PokemonComputer} alt={" pokemon application"} className="" />
+    ),
+    back: (
+      <div style={{ textAlign: "center" }}>
+        <CatchingPokemonIcon style={{ color: "#7deaa2" }}></CatchingPokemonIcon>
+        <h1 style={{ fontSize: 20 }}>PokemonMADNESS</h1>
+        <p
+          style={{
+            fontSize: 15,
+            color: "rgba(255, 255, 255, 0.7)",
+            fontWeight: 400,
+          }}
+        >
+          Flask application wtih user authentication that allows users to battle it out in a pokemon game.
+        </p>
+        <p style={{ fontSize: 14 }}>Flask, Python, PostgreSQL, Postman, API, CSS, HTML</p>
+        {/* <a href=></a> add link of resume scanner and link to code*/}
+      </div>
+    ),
   },
 ];
 
