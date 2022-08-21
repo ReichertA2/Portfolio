@@ -11,7 +11,7 @@ function FlipCard({ card }) {
       >
       
         <div className="card front">
-          <div  className="card-body d-flex justify-content-center align-items-center p-0">
+          <div  className="card-body d-flex justify-content-center align-items-center ">
             <p className="card-text fs-1 fw-bold">{card.front}</p>
           </div>
         </div>
