@@ -14,6 +14,7 @@ import PokemonComputer from "../src/PokemonComputer.png";
 import WorkIcon from "@mui/icons-material/Work";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
+import Button from "@mui/material/Button";
 
 const cards = [
   {
@@ -22,20 +23,31 @@ const cards = [
     front: <img src={PokemonComputer} alt={"reading list"} />,
     back: (
       <div style={{ textAlign: "center" }}>
-      <AutoStoriesIcon style={{ color: "#7deaa2" }}></AutoStoriesIcon>
-      <h1 style={{ fontSize: 20 }}>Reading List</h1>
-      <p
-        style={{
-          fontSize: 15,
-          color: "rgba(255, 255, 255, 0.7)",
-          fontWeight: 400,
-        }}
-      >
-        Application that allows users to browse, remove, and add books to their reading list.
-      </p>
-      <p style={{ fontSize: 14 }}>API, React, JavaScript, MUI, CSS, HTML</p>
-      {/* <a href=></a> add link of resume scanner and link to code*/}
-    </div>
+        <AutoStoriesIcon
+          fontSize="large"
+          style={{ color: "#7deaa2" }}
+        ></AutoStoriesIcon>
+        <h1 style={{ fontSize: 20 }}>Reading List</h1>
+        <p
+          style={{
+            fontSize: 15,
+            color: "rgba(255, 255, 255, 0.7)",
+            fontWeight: 400,
+          }}
+        >
+          Application allows user the
+          ability to browse, remove, and add books to their reading list. App
+          includes theme switch that user can use to switch from day and night
+          colors.
+        </p>
+        <p style={{ fontSize: 14 }}>
+          API, React, JavaScript, MUI, CSS, HTML, Yup, Formik
+        </p>
+        <Button style={{}} variant="outlined">
+          Featured Project
+        </Button>
+        {/* <a href=></a> add link of resume scanner and link to code*/}
+      </div>
     ),
   },
   {
@@ -44,23 +56,26 @@ const cards = [
     front: <img src={ResumeScannerComputer3} alt={" resume scanner"} />,
     back: (
       <div style={{ textAlign: "center" }}>
-      <WorkIcon style={{ color: "#7deaa2" }}></WorkIcon>
-      <h1 style={{ fontSize: 20 }}>Resume Scanner</h1>
-      <p
-        style={{
-          fontSize: 15,
-          color: "rgba(255, 255, 255, 0.7)",
-          fontWeight: 400,
-        }}
-      >
-        Application that scans resume and multiple job descriptions to provide
-        the matching and missing keyword/phrases to help user get through the applicant
-        tracking system.
-      </p>
-      <p style={{ fontSize: 14 }}>
-        Flask, Python, React, JavaScript, PostgreSQL, MUI, CSS, HTML, Formik, Yup
-      </p>
-      {/* <a href=></a> add link of resume scanner and link to code*/}
+        <WorkIcon fontSize="large" style={{ color: "#7deaa2" }}></WorkIcon>
+        <h1 style={{ fontSize: 20 }}>Resume Scanner</h1>
+        <p
+          style={{
+            fontSize: 15,
+            color: "rgba(255, 255, 255, 0.7)",
+            fontWeight: 400,
+          }}
+        >
+          Application scans resume and multiple job descriptions to provide
+          matching and missing keyword/phrases to help user get through the
+          applicant tracking system.
+        </p>
+        <p style={{ fontSize: 14 }}>
+          Flask, React, PostgreSQL, MUI, CSS, HTML, Formik, Yup
+        </p>
+        <Button style={{}} variant="outlined">
+          Featured Project
+        </Button>
+        {/* <a href=></a> add link of resume scanner and link to code*/}
       </div>
     ),
   },
@@ -72,7 +87,10 @@ const cards = [
     ),
     back: (
       <div style={{ textAlign: "center" }}>
-        <CatchingPokemonIcon style={{ color: "#7deaa2" }}></CatchingPokemonIcon>
+        <CatchingPokemonIcon
+          fontSize="large"
+          style={{ color: "#7deaa2" }}
+        ></CatchingPokemonIcon>
         <h1 style={{ fontSize: 20 }}>PokemonMADNESS</h1>
         <p
           style={{
@@ -81,9 +99,15 @@ const cards = [
             fontWeight: 400,
           }}
         >
-          Flask application wtih user authentication that allows users to battle it out in a pokemon game.
+          Multipage Flask application that includes user authentication where user can pick top 5 pokemons to battle
+          it out in a pokemon game. App also allows user to pick their own avatars.
         </p>
-        <p style={{ fontSize: 14 }}>Flask, Python, PostgreSQL, Postman, API, CSS, HTML</p>
+        <p style={{ fontSize: 14 }}>
+          Flask, Python, PostgreSQL, Postman, API, CSS, HTML, CRUD
+        </p>
+        <Button style={{}} variant="outlined">
+          Featured Project
+        </Button>
         {/* <a href=></a> add link of resume scanner and link to code*/}
       </div>
     ),
@@ -98,7 +122,7 @@ function App() {
       <SkillsTitle />
       <AboutMe />
       <Experience />
-      <div id='project'className="container">
+      <div id="project" className="container">
         <div className="row h-100">
           <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
             {cards.map((card) => (
@@ -113,5 +137,3 @@ function App() {
 }
 
 export default App;
-
-

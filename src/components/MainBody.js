@@ -37,7 +37,7 @@ export default function MainBody() {
             be{bull}nev{bull}o{bull}lent
           </Typography> */}
           {/* <Typography sx={{ mb: 1.5 }}>adjective</Typography> */}
-          <Typography style={{color:'#606266'}} variant="body2" sx={{ width:"55%"}}>
+          <Typography variant="body2" sx={{ width:"55%"}}>
             Hi, I am a Software Developer focused in React-Frontend and
             Flask-Backend utilizing PostgreSQL.
             {/* <br /> */}
