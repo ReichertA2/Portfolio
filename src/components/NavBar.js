@@ -12,6 +12,8 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
+import ArticleIcon from "@mui/icons-material/Article";
+import Article from "@mui/icons-material/Article";
 
 // import ThemeSwitch from "./ThemeSwitch";
 
@@ -55,7 +57,6 @@ function SwipeableEdgeDrawer(props) {
     <Root>
       <CssBaseline />
       <Global
-      
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(90% - ${drawerBleeding}px)`,
@@ -78,31 +79,95 @@ function SwipeableEdgeDrawer(props) {
           // marginRight: "200px",
         }}
       >
-        <Typography component="h1" sx={{fontSize: "175% !important"}}><strong>Aydee</strong> Reichert</Typography>
-        
+        <Typography component="h1" sx={{ fontSize: "175% !important" }}>
+          <strong>Aydee</strong> Reichert
+        </Typography>
+
         <div sx={{}}>
-          <a href ="#aboutMe" style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
+          <a
+            href="#aboutMe"
+            style={{
+              marginRight: "2rem",
+              color: "#7deaa2",
+              textTransform: "uppercase",
+              fontSize: "0.875rem",
+              fontWeight: "500",
+              lineWeight: "1.75",
+              letterSpacing: "0.02857em",
+              textDecoration: "none",
+            }}
+          >
             About Me
           </a>
-          <a href='#experience' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
+          <a
+            href="#experience"
+            style={{
+              marginRight: "2rem",
+              color: "#7deaa2",
+              textTransform: "uppercase",
+              fontSize: "0.875rem",
+              fontWeight: "500",
+              lineWeight: "1.75",
+              letterSpacing: "0.02857em",
+              textDecoration: "none",
+            }}
+          >
             Experience
           </a>
-          <a href='#project' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
+          <a
+            href="#project"
+            style={{
+              marginRight: "2rem",
+              color: "#7deaa2",
+              textTransform: "uppercase",
+              fontSize: "0.875rem",
+              fontWeight: "500",
+              lineWeight: "1.75",
+              letterSpacing: "0.02857em",
+              textDecoration: "none",
+            }}
+          >
             Projects
           </a>
-          <a href='#contact' style={{ marginRight: "2rem", color: "#7deaa2", textTransform: "uppercase", fontSize:"0.875rem", fontWeight:"500", lineWeight:"1.75", letterSpacing:"0.02857em", textDecoration:'none' }}  >
-          Contact
+          <a
+            href="#contact"
+            style={{
+              marginRight: "2rem",
+              color: "#7deaa2",
+              textTransform: "uppercase",
+              fontSize: "0.875rem",
+              fontWeight: "500",
+              lineWeight: "1.75",
+              letterSpacing: "0.02857em",
+              textDecoration: "none",
+            }}
+          >
+            Contact
           </a>
         </div>
-        <Link sx={{ marginRight: "-11%", textDecoration:'none' }} href="https://github.com/ReichertA2">
-          <GitHubIcon sx={{marginRight:"0.5rem"}} />
-          Github
-        </Link>
+        <div>
+          <Link
+            sx={{ textDecoration: "none", marginRight: "2rem", '&:hover': { color: '#7deaa2' }  }}
+            href="https://github.com/ReichertA2"
+          >
+            <GitHubIcon sx={{ marginRight: "0.3rem",'&:hover': { color: '#7deaa2' } }}  />
+            Github
+          </Link>
 
-        <Link style={{textDecoration:'none'}}href="https://www.linkedin.com/in/aydee-reichert">
-          <LinkedInIcon sx={{marginRight:"0.5rem"}}  />
-          LinkedIn
-        </Link>
+          <Link
+            sx={{ textDecoration: "none", marginRight: "2rem", '&:hover': { color: '#7deaa2' } }}
+            href="https://www.linkedin.com/in/aydee-reichert"
+          >
+            <LinkedInIcon sx={{ marginRight: "0.3rem",'&:hover': { color: '#7deaa2' } }} />
+            LinkedIn
+          </Link>
+          <Link
+            sx={{ textDecoration: "none", '&:hover': { color: '#7deaa2' }}}
+            href="https://drive.google.com/file/d/1UEno4Sr0f_IDm5JKG2G7YgHlfuL0SHxl/view?usp=sharing"
+          >
+            <ArticleIcon sx={{ marginRight: "0.3rem", '&:hover': { color: '#7deaa2' } }} /> Resume
+          </Link>
+        </div>
         {/* <ThemeSwitch/> */}
       </Box>
       {/* <div sx={{}}>
@@ -116,7 +181,6 @@ function SwipeableEdgeDrawer(props) {
         </p>
       </div> */}
       <SwipeableDrawer
-      
         container={container}
         anchor="bottom"
         open={open}
@@ -129,7 +193,6 @@ function SwipeableEdgeDrawer(props) {
         }}
       >
         <StyledBox
-        
           sx={{
             position: "absolute",
             top: -drawerBleeding,
@@ -140,7 +203,6 @@ function SwipeableEdgeDrawer(props) {
             left: 0,
           }}
         >
-          
           {/* <Puller /> */}
           {/* <Typography sx={{ p: 2, color: "text.secondary" }}>
             51 results
@@ -154,7 +216,7 @@ function SwipeableEdgeDrawer(props) {
             overflow: "auto",
           }}
         >
-          <Skeleton  variant="rectangular" height="100%" />
+          <Skeleton variant="rectangular" height="100%" />
         </StyledBox>
       </SwipeableDrawer>
     </Root>
