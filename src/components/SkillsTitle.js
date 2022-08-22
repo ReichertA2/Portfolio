@@ -5,8 +5,8 @@ import React from "react";
 export default function SkillsTitle() {
   return (
     <section id="aboutMe" style={{marginLeft:542, marginTop:100}} >
-    <div class="float-left" style={{width:'51%',fontSize:25 }}> Skills </div>
-    <div class="float-left" style={{width:'40%', fontSize:25 }}> About Me </div>
+    <div class="float-left" style={{width:'51%',fontSize:25, fontWeight: 'bold'}}> Skills </div>
+    <div class="float-left" style={{width:'40%', fontSize:25, fontWeight: 'bold' }}> About Me </div>
     </section>
   )
 }

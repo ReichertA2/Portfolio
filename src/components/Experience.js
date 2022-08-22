@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
     <div style={{marginTop:100, background: '#2D2F33'}} >
       <div sx={{marginTop:100}}>
         <section id="experience">
-          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100, textAlign: 'center'}} >Experience</h1>
+          <h1 style={{fontSize:25, marginTop:100, textAlign: 'center'}} >Experience</h1>
 
           {/* <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Experience</h1> */}
           </section>
