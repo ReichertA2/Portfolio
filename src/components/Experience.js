@@ -19,21 +19,26 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <Box style={{ background:'#2D2F33', marginTop:100, marginBottom:100}} className="mt-96">
-    <div style={{marginTop:100, background: '#2D2F33'}} className="w-4/5 ml-72 mt-96">
-      <div className="inline-block w-1/3 align-top text-right" sx={{}}>
+    <Box style={{ background:'#2D2F33', marginTop:100, marginBottom:100}} >
+    <div style={{marginTop:100, background: '#2D2F33'}} >
+      <div sx={{marginTop:100}}>
         <section id="experience">
-          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Experience</h1>
+          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100, textAlign: 'center'}} >Experience</h1>
+
+          {/* <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Experience</h1> */}
           </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
     </Button> */}
       </div>
-      <div style={{marginTop:100, marginBottom:100}} className="w-3/6 p-3 inline-block" >
+      <div style={{marginBottom:100}} className="w-3/6 p-3 inline-block ml-96" >
         {/* <p className="text-green-400">Resume </p> */}
         <Accordion
           sx={{
             border:'none',
+           
+            
+            // width:'50%',
             backgroundImage:
               "linear-gradient(to top, #222325, #242527, #26272a, #282a2c, #2a2c2f, #2b2d30, #2c2e32, #2d2f33, #2d2f33, #2d2f33, #2d2f33, #2d2f33)",
             // boxShadow: 3
