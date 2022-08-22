@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
     <div style={{marginTop:100, background: '#2D2F33'}} className="w-4/5 ml-72 mt-96">
       <div className="inline-block w-1/3 align-top text-right" sx={{}}>
         <section id="experience">
-          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Background</h1>
+          <h1 style={{fontSize:25, color:'#7deaa2', marginTop:100}} className="text-green-400 p-4 px-44 text-2xl">Experience</h1>
           </section>
         {/* <Button  sx={{marginLeft:"25%"}} variant="contained">
       Resume
@@ -158,9 +158,9 @@ export default function ControlledAccordions() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <p>
+              
                 Successfully implemented new SQC program with zero incidences
-              </p>
+              
               <ul className="custom-list p-5">
                 <li>
                   Led the Proficiency Testing Program (PTP) where samples are
