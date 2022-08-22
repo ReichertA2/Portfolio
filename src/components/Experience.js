@@ -55,8 +55,8 @@ export default function ControlledAccordions() {
               Coding Temple
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>
-              <p>Full Stack Developer</p>
-              04/2022 - 06/2022
+              Full Stack Developer
+              <p>04/2022 - 06/2022</p>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -157,8 +157,8 @@ export default function ControlledAccordions() {
               ExxonMobil
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>
-              <p>Statistical Quality Control (SQC) Coordinator</p>
-              01/2018 - 03/2020
+              Statistical Quality Control (SQC) Coordinator
+              <p>01/2018 - 03/2020</p>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -199,8 +199,8 @@ export default function ControlledAccordions() {
               ExxonMobil
             </Typography>
             <Typography sx={{ color: "text.secondary" }}>
-              <p>Quality Specialist (Synthetics/Catalyst)</p>
-              01/2017 - 01/2018
+              Quality Specialist (Synthetics/Catalyst)
+              <p>01/2017 - 01/2018</p>
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
