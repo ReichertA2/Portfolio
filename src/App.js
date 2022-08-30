@@ -15,12 +15,13 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import Button from "@mui/material/Button";
 import Project from "./components/Project";
+import ReadingList from "../src/ReadingList.png"
 
 const cards = [
   {
     id: "1",
     variant: "hover",
-    front: <img src={PokemonComputer} alt={"reading list"} />,
+    front: <img src={ReadingList} alt={"reading list"} />,
     back: (
       <div style={{ textAlign: "center" }}>
         <AutoStoriesIcon
