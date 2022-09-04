@@ -19,7 +19,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <Box style={{ background:'#2D2F33', marginBottom:100}} >
+    <Box style={{ background:'#2D2F33', marginBottom:100, }} >
     <div style={{marginTop:100, background: '#2D2F33'}} >
       <div sx={{marginTop:100}}>
         <section id="experience">
@@ -36,7 +36,6 @@ export default function ControlledAccordions() {
         <Accordion
           sx={{
             border:'none',
-           
             
             // width:'50%',
             backgroundImage:

@@ -15,7 +15,8 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import Button from "@mui/material/Button";
 import Project from "./components/Project";
-import ReadingList from "../src/ReadingList.png"
+import ReadingList from "../src/ReadingList.png";
+import Carosel from "./components/Carosel";
 
 const cards = [
   {
@@ -43,9 +44,13 @@ const cards = [
         <p style={{ fontSize: 14 }}>
           API, React, JavaScript, MUI, CSS, HTML, Yup, Formik
         </p>
-        <Button style={{}} variant="outlined" onClick={()=>window.open('https://github.com/ReichertA2/React-Project.git')}>
+        {/* <Button style={{}} variant="outlined" onClick={()=>window.open('https://github.com/ReichertA2/React-Project.git')}>
+          Featured Project
+        </Button> */}
+          <Button style={{}} variant="outlined" onClick={Carosel}>
           Featured Project
         </Button>
+
 
         {/* <a href=></a> add link of resume scanner and link to code*/}
       </div>
@@ -146,6 +151,7 @@ function App() {
         </div>
       </div>
       <Contact />
+      {/* <Carosel /> */}
     </main>
   );
 }
