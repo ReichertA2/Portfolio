@@ -5,49 +5,85 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import ConstructionOutlinedIcon from "@mui/icons-material/ConstructionOutlined";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
 
-
-
 const Item = styled(Paper)(({ theme }) => ({
-  background:  "#25262A",
+  background: "#25262A",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
- 
+
   height: 300,
   width: 200,
   marginLeft: 270,
   showGridLines: false,
   border: "none",
   boxShadow: "none",
-//   border: "none",
-//   boxShadow: "none",
-  
-  
-  
-  
-  
-  
-//   backgroundColor: theme.palette.background.default
-  
-//   marginTop: 80,
+  //   border: "none",
+  //   boxShadow: "none",
+
+  //   backgroundColor: theme.palette.background.default
+
+  //   marginTop: 80,
 }));
 
 export default function AboutMe() {
   return (
-    <Box style={{ width: "100%"}}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} >
+    <Box style={{ width: "100%" }}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 2, sm: 1, md: 3 }}>
         <Grid item xs={1.56}>
-        
+          <Item sx={{ height: 25, gridRow: "span 1" }}></Item>
+        </Grid>
+        <Grid item xs={1.55}>
+          <Item
+            sx={{
+              // width: "50%",
+              height: 45,
+              fontSize: 25,
+              fontWeight: "bold",
+              // display: "inline-block",
+            }}
+          >
+            Skills
+          </Item>
+        </Grid>
+        <Grid item xs={1.8}>
+          <Item
+            sx={{
+              height: 25,
+              width: "75%",
+              fontSize: 25,
+              fontWeight: "bold",
+            }}
+          ></Item>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Item
+            sx={{
+              gridRow: "span 1",
+              height: 25,
+              width: "75%",
+              fontSize: 25,
+              fontWeight: "bold",
+            }}
+          >
+            About Me
+          </Item>
+        </Grid>
+      </Grid>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 2, sm: 1, md: 3 }}>
+        <Grid item xs={1.56}>
           <Item style={{}}>
             <i
               style={{ fontSize: 30, color: "#7deaa2", marginBottom: 15 }}
               class="fa-solid fa-laptop-code"
             ></i>
-            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Front End</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color: "#fff" }}>
+              Front End
+            </h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>React</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>JavaScript</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>HTML</p>
@@ -69,7 +105,9 @@ export default function AboutMe() {
               color="primary"
               fontSize="large"
             ></ConstructionOutlinedIcon> */}
-            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Back End</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color: "#fff" }}>
+              Back End
+            </h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Flask</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Python</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>PostgreSQL</p>
@@ -85,7 +123,9 @@ export default function AboutMe() {
               fontSize="large"
               style={{ marginBottom: 10 }}
             ></ConstructionOutlinedIcon>
-            <h1 style={{ fontSize: 20, marginBottom: 15, color:"#fff" }}>Tools</h1>
+            <h1 style={{ fontSize: 20, marginBottom: 15, color: "#fff" }}>
+              Tools
+            </h1>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Git</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Github</p>
             <p style={{ fontSize: 15, marginBottom: 10 }}>Visual Studio Code</p>
@@ -96,11 +136,16 @@ export default function AboutMe() {
         </Grid>
 
         <Grid item xs={4}>
-          <Item style={{ width: 400 }}>
+          <Item
+            style={{
+              width: "75%",
+              // margin: "0px auto",
+              // backgroundColor: "purple",
+            }}
+          >
             <section id="aboutMe">
               <div style={{}}>
-                
-                <Button style={{fontSize:20}}>Developer</Button>
+                <Button style={{ fontSize: 20 }}>Developer</Button>
                 <p style={{ color: "#606266" }} className="opacity-80">
                   As a Full Stack Developer, I am creative, innovative and
                   passionate about bringing solutions to challenging issues. I
@@ -111,9 +156,15 @@ export default function AboutMe() {
                   of an application and love how backend makes the connection.
                   Cannot wait to join your team!!
                 </p>
-                <Link style={{textDecoration:'none'}}href="https://www.linkedin.com/in/aydee-reichert"><Button style={{ marginTop:15 }} variant="outlined"><LinkedInIcon sx={{marginRight:"0.5rem"}}/>
-                  Lets Connect
-                </Button></Link>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  href="https://www.linkedin.com/in/aydee-reichert"
+                >
+                  <Button style={{ marginTop: 15 }} variant="outlined">
+                    <LinkedInIcon sx={{ marginRight: "0.5rem" }} />
+                    Lets Connect
+                  </Button>
+                </Link>
               </div>
             </section>
           </Item>
