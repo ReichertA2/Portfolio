@@ -7,6 +7,7 @@
 
 - React 
 - Tailwind CSS
+- CSS
 - MUI
 - Sass
 - Font Awesome
