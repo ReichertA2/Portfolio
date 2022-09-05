@@ -18,7 +18,6 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 function SwipeableTextMobileStepper({images, URL}) {
-
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -34,6 +33,14 @@ function SwipeableTextMobileStepper({images, URL}) {
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
+
+  const renderLinks = (url) => {
+    console.log("url",url);
+    if (url){
+      window.open(url);
+    }
+  }
+
 
   return (
     <Box sx={{ maxWidth: 500, flexGrow: 1, margin:'0px auto' }}>
@@ -54,7 +61,7 @@ function SwipeableTextMobileStepper({images, URL}) {
           href={URL[0]}
           style={{ textDecoration: "none", color: '#7deaa2', width:"10%"  }}
           onClick={() =>
-            window.open(URL[1])
+            renderLinks(URL[1])
           }
         >
           {" "}

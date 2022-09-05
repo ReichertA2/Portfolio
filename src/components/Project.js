@@ -261,7 +261,7 @@ export default function Project() {
   const [project3, setProject3] = useState(false);
 
   const renderCarosel = (id) => {
-    console.log("test", id);
+    // console.log("test", id);
     if (id == 1) {
       setProject1(true);
       setProject2(false);
