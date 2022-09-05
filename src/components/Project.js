@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import FlipCard from "./FlipCard";
 import ResumeScannerComputer3 from "../../src/ResumeScannerComputer3.png";
 import PokemonComputer from "../../src/PokemonComputer.png";
@@ -10,9 +10,6 @@ import ReadingList from "../../src/ReadingList.png";
 import Carosel from "./Carosel";
 
 
-const renderCarosel = (id) => {
-  console.log("test");
-};
 
 const cards = [
   {
@@ -39,7 +36,7 @@ const cards = [
         <Button
           style={{}}
           variant="outlined"
-          onClick={() => renderCarosel("1")}
+          // onClick={() => renderCarosel("1")}
         >
           Featured Project
         </Button>
@@ -119,6 +116,29 @@ const cards = [
 ];
 
 export default function Project() {
+  const[project1, setProject1] = useState(false);
+  const[project2, setProject2] = useState(false);
+  const[project3, setProject3] = useState(false);
+
+  const renderCarosel = (id) => {
+    console.log("test", id);
+    if (id == 1){
+      setProject1(true)
+      setProject2(false)
+      setProject3(false)
+    }
+    else if(id==2){
+      setProject1(false)
+      setProject2(true)
+      setProject3(false)
+    }
+    else if(id==3){
+      setProject1(false)
+      setProject2(false)
+      setProject3(true)
+    }
+  };
+  
   return (
     <section id="project" style={{}}>
       <div style={{ fontSize: 25, textAlign: "center", fontWeight: "bold" }}>
@@ -130,11 +150,14 @@ export default function Project() {
         <div>
           <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
             {cards.map((card) => (
-              <FlipCard key={card.id} card={card} />
+              <FlipCard key={card.id} card={card} renderCarosel={renderCarosel}/>
             ))}
           </div>
         </div>
       </div>
+      {project1?<Carosel />:""}
+      {project2?<Carosel />:""}
+      {project3?<Carosel />:""}
       {/* <Carosel /> */}
 
     </section>

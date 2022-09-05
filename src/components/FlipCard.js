@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Button from "@mui/material/Button";
 
-function FlipCard({ card }) {
+function FlipCard({ card, renderCarosel }) {
   return (
     <div className="flip-card-outer">
       <div
@@ -35,11 +35,14 @@ function FlipCard({ card }) {
                 <Button
                   style={{}}
                   variant="outlined"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/ReichertA2/Single-Page-App-Flask-.git"
-                    )
+                  onClick={() => renderCarosel(card.id)
+                   
+                    
                   }
+                //   window.open(
+                //     "https://github.com/ReichertA2/Single-Page-App-Flask-.git"
+                //   )
+                // }
                 >
                   Featured Project
                 </Button>
