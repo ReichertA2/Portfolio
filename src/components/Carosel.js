@@ -9,13 +9,15 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from "@mui/material/Link";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 
 
-function SwipeableTextMobileStepper({images}) {
+function SwipeableTextMobileStepper({images, URL}) {
 
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -34,7 +36,7 @@ function SwipeableTextMobileStepper({images}) {
   };
 
   return (
-    <Box sx={{ maxWidth: 500, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 500, flexGrow: 1, margin:'0px auto' }}>
       <Paper
         square
         elevation={0}
@@ -47,7 +49,24 @@ function SwipeableTextMobileStepper({images}) {
           
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <Typography style={{fontWeight: 'bold', width:"88%"}}>{images[activeStep].label}</Typography>
+        <a
+          href={URL[0]}
+          style={{ textDecoration: "none", color: '#7deaa2', width:"10%"  }}
+          onClick={() =>
+            window.open(URL[1])
+          }
+        >
+          {" "}
+          <GitHubIcon sx={{'&:hover': { color: '#7deaa2' } }}  />
+        </a>
+        {/* <Link
+            sx={{ textDecoration: "none", '&:hover': { color: '#7deaa2' }, width:"10%" }}
+            href={URL}
+          >
+            <GitHubIcon sx={{'&:hover': { color: '#7deaa2' } }}  />
+            
+          </Link> */}
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

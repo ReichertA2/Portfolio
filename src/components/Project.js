@@ -39,7 +39,8 @@ const cards = [
     projectTitle: "Reading List",
     projectDesc:
       "Application allows user the ability to browse, remove, and add books to their reading list. App includes theme switch that user can use to switch from day and night colors.",
-    projectTools: "API, React, JavaScript, MUI, CSS, HTML, Yup, Formik",
+      projectTools: "API, React, JavaScript, MUI, CSS, HTML, Yup, Formik",
+      URL:["https://github.com/ReichertA2/React-Project.git",],
     icon: (
       <AutoStoriesIcon
         fontSize="large"
@@ -73,6 +74,7 @@ const cards = [
     projectDesc:
       "Application scans resume and multiple job descriptions to provide matching and missing keyword/phrases to help user get through the applicant tracking system.",
     projectTools: "Flask, React, PostgreSQL, MUI, CSS, HTML, Formik, Yup",
+    URL:["https://github.com/ReichertA2/Resume-Scanner.git","https://github.com/ReichertA2/Resume-Scanner-API.git"],
     icon: <WorkIcon fontSize="large" style={{ color: "#7deaa2" }}></WorkIcon>,
 
     back: (
@@ -108,6 +110,7 @@ const cards = [
     projectDesc:
       "Multipage Flask application that includes user authentication where user can pick top 5 pokemons to battle it out in a pokemon game. App also allows user to pick their own avatars.",
     projectTools: "Flask, Python, PostgreSQL, Postman, API, CSS, HTML, CRUD",
+    URL:["https://github.com/ReichertA2/Single-Page-App-Flask-.git",""],
     icon: (
       <CatchingPokemonIcon
         fontSize="large"
@@ -294,10 +297,10 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div style={{margin:'auto', width:'20%', marginTop:'-50px'}}>
-      {project1 ? <Carosel  images={images[0]} /> : ""}
-      {project2 ? <Carosel images={images[1]}  /> : ""}
-      {project3 ? <Carosel images={images[2]} /> : ""}
+      <div style={{margin:'auto', width:'100%', marginTop:'-50px'}}>
+      {project1 ? <Carosel  images={images[0]} URL={cards[0].URL} /> : ""}
+      {project2 ? <Carosel images={images[1]} URL={cards[1].URL} /> : ""}
+      {project3 ? <Carosel images={images[2]} URL={cards[2].URL} /> : ""}
       </div>
       {/* <Carosel /> */}
     </section>
