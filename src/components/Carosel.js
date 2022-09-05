@@ -34,7 +34,7 @@ function SwipeableTextMobileStepper({images}) {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 500, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -44,6 +44,7 @@ function SwipeableTextMobileStepper({images}) {
           height: 50,
           pl: 2,
           bgcolor: 'background.default',
+          
         }}
       >
         <Typography>{images[activeStep].label}</Typography>
@@ -62,9 +63,10 @@ function SwipeableTextMobileStepper({images}) {
                 sx={{
                   height: 255,
                   display: 'block',
-                  maxWidth: 400,
+                  maxWidth: 500,
                   overflow: 'hidden',
                   width: '100%',
+                 
                 }}
                 src={step.imgPath}
                 alt={step.label}

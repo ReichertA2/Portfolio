@@ -150,11 +150,11 @@ const images = [
       imgPath:
         ReadingListLogin,
     },
-    {
-      label: "Edit Profile",
-      imgPath:
-        EditProfilePokemon,
-    },
+    // {
+    //   label: "Edit Profile",
+    //   imgPath:
+    //     EditProfilePokemon,
+    // },
     {
       label: "Browse Books",
       imgPath:
@@ -230,6 +230,11 @@ const images = [
         LoginPokemon,
     },
     {
+      label: "Edit Profile",
+      imgPath:
+        EditProfilePokemon,
+    },
+    {
       label: "Training Grounds",
       imgPath:
         TrainingGrounds,
@@ -289,9 +294,11 @@ export default function Project() {
           </div>
         </div>
       </div>
-      {project1 ? <Carosel images={images[0]} /> : ""}
+      <div style={{margin:'auto', width:'20%', marginTop:'-50px'}}>
+      {project1 ? <Carosel  images={images[0]} /> : ""}
       {project2 ? <Carosel images={images[1]}  /> : ""}
       {project3 ? <Carosel images={images[2]} /> : ""}
+      </div>
       {/* <Carosel /> */}
     </section>
   );
