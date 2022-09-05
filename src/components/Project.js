@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 import FlipCard from "./FlipCard";
 import ResumeScannerComputer3 from "../../src/ResumeScannerComputer3.png";
 import PokemonComputer from "../../src/PokemonComputer.png";
@@ -8,8 +8,27 @@ import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import Button from "@mui/material/Button";
 import ReadingList from "../../src/ReadingList.png";
 import Carosel from "./Carosel";
-
-
+import ReadingListLandingPage from "../ReadingListLandingPage.PNG"
+import Register from "../Register.PNG"
+import ReadingListLogin from "../ReadingListLogin.PNG"
+import ReadingListInventory from "../ReadingListInventory.PNG"
+import SubjectFilter from "../SubjectFilter.PNG"
+import BrowseBooks from "../BrowseBooks.PNG"
+import PokemonMadness from "../PokemonMadness.PNG"
+import TrainingGrounds from "../TrainingGrounds.PNG"
+import PokemonTeam from "../PokemonTeam.PNG"
+import PokemonBattle from "../PokemonBattle.PNG"
+import RegisterPokemon from "../RegisterPokemon.PNG"
+import LoginPokemon from "../LoginPokemon.PNG"
+import EditProfilePokemon from "../EditProfilePokemon.PNG"
+import ResumeScannerLandingPage from "../ResumeScannerLandingPage.PNG"
+import RegisterResume from "../RegisterResume.PNG"
+import LoginResume from "../LoginResume.PNG"
+import EditProfileResume from "../EditProfileResume.PNG"
+import ResumeScannerPage from "../ResumeScannerPage.PNG"
+import ResumeResults from "../ResumeResults.PNG"
+import ResumeAccountProfile from "../ResumeAccountProfile.PNG"
+import ResumeContactUs from "../ResumeContactUs.PNG"
 
 const cards = [
   {
@@ -114,31 +133,142 @@ const cards = [
     ),
   },
 ];
+const images = [
+  [
+    {
+      label: "Story Keeper",
+      imgPath:
+        ReadingListLandingPage,
+    },
+    {
+      label: "Register",
+      imgPath:
+        Register,
+    },
+    {
+      label: "Login",
+      imgPath:
+        ReadingListLogin,
+    },
+    {
+      label: "Edit Profile",
+      imgPath:
+        EditProfilePokemon,
+    },
+    {
+      label: "Browse Books",
+      imgPath:
+        BrowseBooks,
+    },
+    {
+      label: "Reading List",
+      imgPath:
+        ReadingListInventory,
+    },
+    {
+      label: "Subject Filter",
+      imgPath:
+        SubjectFilter,
+    },
+  ],
+  [
+    {
+      label: "Resume Scanner",
+      imgPath:
+        ResumeScannerLandingPage,
+    },
+    {
+      label: "Register",
+      imgPath:
+        RegisterResume,
+    },
+    {
+      label: "Login",
+      imgPath:
+        LoginResume,
+    },
+    {
+      label: "Edit Profile",
+      imgPath:
+        EditProfileResume,
+    },
+    {
+      label: "Scanning Page",
+      imgPath:
+        ResumeScannerPage,
+    },
+    {
+      label: "Results",
+      imgPath:
+        ResumeResults,
+    },
+    // {
+    //   label: "User Profile",
+    //   imgPath:
+    //     ResumeAccountProfile,
+    // },
+    {
+      label: "Contact Us",
+      imgPath:
+        ResumeContactUs,
+    },
+  ],
+  [
+    {
+      label: "PokemonMadness",
+      imgPath:
+        PokemonMadness,
+    },
+    {
+      label: "Register",
+      imgPath:
+        RegisterPokemon,
+    },
+    {
+      label: "Login",
+      imgPath:
+        LoginPokemon,
+    },
+    {
+      label: "Training Grounds",
+      imgPath:
+        TrainingGrounds,
+    },
+    {
+      label: "Pokemon Team",
+      imgPath:
+        PokemonTeam,
+    },
+    {
+      label: "Pokemon Battle",
+      imgPath:
+        PokemonBattle,
+    },
+  ],
+];
 
 export default function Project() {
-  const[project1, setProject1] = useState(false);
-  const[project2, setProject2] = useState(false);
-  const[project3, setProject3] = useState(false);
+  const [project1, setProject1] = useState(false);
+  const [project2, setProject2] = useState(false);
+  const [project3, setProject3] = useState(false);
 
   const renderCarosel = (id) => {
     console.log("test", id);
-    if (id == 1){
-      setProject1(true)
-      setProject2(false)
-      setProject3(false)
-    }
-    else if(id==2){
-      setProject1(false)
-      setProject2(true)
-      setProject3(false)
-    }
-    else if(id==3){
-      setProject1(false)
-      setProject2(false)
-      setProject3(true)
+    if (id == 1) {
+      setProject1(true);
+      setProject2(false);
+      setProject3(false);
+    } else if (id == 2) {
+      setProject1(false);
+      setProject2(true);
+      setProject3(false);
+    } else if (id == 3) {
+      setProject1(false);
+      setProject2(false);
+      setProject3(true);
     }
   };
-  
+
   return (
     <section id="project" style={{}}>
       <div style={{ fontSize: 25, textAlign: "center", fontWeight: "bold" }}>
@@ -150,16 +280,19 @@ export default function Project() {
         <div>
           <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
             {cards.map((card) => (
-              <FlipCard key={card.id} card={card} renderCarosel={renderCarosel}/>
+              <FlipCard
+                key={card.id}
+                card={card}
+                renderCarosel={renderCarosel}
+              />
             ))}
           </div>
         </div>
       </div>
-      {project1?<Carosel />:""}
-      {project2?<Carosel />:""}
-      {project3?<Carosel />:""}
+      {project1 ? <Carosel images={images[0]} /> : ""}
+      {project2 ? <Carosel images={images[1]}  /> : ""}
+      {project3 ? <Carosel images={images[2]} /> : ""}
       {/* <Carosel /> */}
-
     </section>
   );
 }
