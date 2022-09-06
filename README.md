@@ -20,6 +20,8 @@ job opportunities and for networking purposes. It lists my top projects in my Gi
 gives a short summary of what the projects are about, provides images of the 
 applications, and includes the github hyperlinks as well.
 
+Check out my site [here](https://reicherta2.github.io/Portfolio/)
+
 ## Setup
 - clone the respository
 - run npm install
