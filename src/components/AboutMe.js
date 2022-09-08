@@ -146,7 +146,7 @@ export default function AboutMe() {
             <section id="aboutMe">
               <div style={{}}>
                 <Button style={{ fontSize: 20 }}>Developer</Button>
-                <p style={{ color: "#606266" }} className="opacity-80">
+                <p style={{ color: "#86888d", }} className="opacity-80">
                   As a Full Stack Developer, I am creative, innovative and
                   passionate about bringing solutions to challenging issues. I
                   will continue to strive to improve and be better as a
